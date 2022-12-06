@@ -6,33 +6,6 @@ using System.Text.RegularExpressions;
 string inputtext = System.IO.File.ReadAllText(@"input.txt");
 string[] values = inputtext.Split(new[] { "\n" }, StringSplitOptions.None);
 
-/*
-var stacks = new Stack<char>[9]
-{
-    new Stack<char>(),
-    new Stack<char>(),
-    new Stack<char>(),
-    new Stack<char>(),
-    new Stack<char>(),
-    new Stack<char>(),
-    new Stack<char>(),
-    new Stack<char>(),
-    new Stack<char>()
-};*/
-
-/*
-stacks[0].Push('Z');
-stacks[0].Push('N');
-
-stacks[1].Push('M');
-stacks[1].Push('C');
-stacks[1].Push('D');
-
-stacks[2].Push('P');
-*/
-
-
-
 var stringArray = values.Take(9).ToArray();
 
 char[,] charMatrix = new char[stringArray.Length, stringArray[0].Length];
